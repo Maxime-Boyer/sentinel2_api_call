@@ -1,12 +1,12 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.202.3/containers/python-3
 {
-	"name": "DAG NAO Container",
+	"name": "H2 Project Container",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "h2-startup",
+	"service": "h2_startup",
 	"remoteUser": "root",
 	"runServices": [
-		"h2-startup"
+		"h2_startup"
 	],
 	"shutdownAction": "stopCompose",
 	"workspaceFolder": "/workspace",
