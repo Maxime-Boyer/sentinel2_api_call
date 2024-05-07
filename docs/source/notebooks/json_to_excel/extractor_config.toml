@@ -1,0 +1,22 @@
+[tender]
+id = "2024DOS0550696"
+description = "Technicien Support Utilisateur"
+
+[tender.sncf]
+cdc = "/workspace/notebooks/json/2023DOS0550696/amaris/cdc1.json"
+rec = "/workspace/notebooks/json/2023DOS0550696/amaris/rec1.json"
+has_metadata = true
+
+# responses is a list of hashamps with a json files paths. One element for each respondant.
+[[tender.responses]] #first json
+cv_json = "/workspace/notebooks/json/2023DOS0550696/amaris/cv1.json"
+has_metadata = true
+
+[[tender.responses]] #second json...
+cv_json = "/workspace/notebooks/json/2023DOS0550696/amaris/cv1.json"
+has_metadata = true
+
+
+# Excel writer configurations
+[writer]
+outname = "/workspace/notebooks/outputs/2023DOS0550696/AI_PARSED.xlsx"

@@ -1,0 +1,8 @@
+1 : 
+"Numéro de la page au sein de laquelle a été trouvée l'information dans le document."
+
+2 : 
+"Numéro de la page dans laquelle se trouve l'information qui t'a permis de répondre."
+
+3 :
+"Numéro indiquant entre quel DEBUT DE PAGE et FIN DE PAGE se trouve l'information qui t'a permis de répondre."

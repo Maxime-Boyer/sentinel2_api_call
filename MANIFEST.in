@@ -1,0 +1,56 @@
+# Root directory
+## Include
+recursive-include src *
+recursive-include docs *
+recursive-include data *.gitkeep
+
+include requirements*
+include README.md
+include CHANGELOG.md
+
+
+include MANIFEST.in 
+include pytest.ini 
+include setup.py 
+include tox.ini
+include README.md 
+include sonar-project.properties
+
+include Jenkinsfile 
+include pylintrc 
+include setup.cfg 
+
+## Exclude
+recursive-exclude .vscode *
+recursive-exclude docs *
+recursive-exclude tests *
+recursive-exclude .devcontainer *
+recursive-exclude .git  *
+recursive-exclude .pytest_cache  *
+recursive-exclude .venv  *
+recursive-exclude eul *
+recursive-exclude tests *.pyc
+recursive-exclude src *.pyc
+
+recursive-exclude jenkins *
+recursive-exclude deployment *
+recursive-exclude .gitlab *
+recursive-include chart *
+recursive-include charts *
+
+exclude .pre-commit-config.yaml
+exclude .gitignore 
+exclude entry_point.sh
+exclude *.sh 
+exclude *.properties
+exclude CONTRIBUTING.md
+exclude pylintrc
+exclude pytest.ini
+exclude pylint-report.txt
+exclude .DS_Store
+
+exclude Jenkinsfile*
+
+# Docker directory
+## Exclude
+recursive-exclude docker Dockerfile

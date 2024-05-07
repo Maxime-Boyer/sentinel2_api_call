@@ -1,0 +1,355 @@
+Page 1 de 6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Compétences techniques : 
+ 
+ 
+Compétences principales : 
+ 
+ 
+• 
+Teams, Windows 7, 10 
+• 
+Office 365, Outlook 
+• 
+Ticketing: Service Now, Itsm, Easy Vista 
+• 
+Gestion parc: Asset manager 
+• 
+Réseau : Connexion cable et connexion wifi 
+• 
+Administration serveur/ système : Windows, NEC, DELL 
+ 
+ 
+ 
+ 
+ 
+ 
+Savoir gérer les conflits dans son équipe 
+Obtenue en 2023 
+ITIL Fondation V4 
+Obtenue en 2020 
+ITIL Polestar : Sensibilisation aux Best Practices 
+Obtenue en 2013 
+ 
+Profil JMB 
+Technicien support de proximité/Superviseur de production 
++ 10 ans d’expérience 
+ 
+DOMAINES DE COMPETENCES 
+FORMATIONS ET CERTIFICATIONS 
+Page 2 de 6 
+ 
+ 
+ 
+ 
+ 
+SNCF 
+Janvier-Avril 2023 
+Mission : Coordinateur de Production - Backup PS 
+Actions / Tâches : 
+Pilotage et contrôle des supports proximités locaux en IDF. 
+ 
+• 
+Surveillance et Alerte 
+• 
+Suivi des tickets SNow affectés aux supports pendant toute la durée de l’affectation 
+• 
+Suivi des SLA (délais dépannages et prestations) et relances des équipes 
+• 
+Rédiger des procédures, des tutoriels, des consignes 
+• 
+Suivi des écarts et anomalies, mise en conformité des tickets 
+• 
+Suivi des incidents majeurs et urgents – Support CADRE DIRIGEANT 
+• 
+Suivi des réclamations et des relances utilisateurs 
+• 
+Suivi des incidents de sécurité 
+• 
+Répondre aux sollicitations du support distant, DGOP, DSNU (DOSN), et des ASTI 
+• 
+Soutien aux équipes du Support Local sur tous les sujets bloquants et médiation 
+• 
+Gestion de parc 
+• 
+Prendre en charge les déclarations d’incidents ou d’anomalie de fonctionnement 
+bureautique quand les processus standard des porteurs de services ne suffisent pas 
+• 
+Assure le suivi des indicateurs de conformité du parc (Nexthink) et sollicite le support 
+ 
+Environnement technique : Windows 10, office 365 
+Framatome 
+D’octobre 2022 à décembre 2022 
+Mission : Coordinateur de Production - Référent Technique 
+Actions / Tâches : 
+ 
+• 
+Gestion et réduction de back log (environ 6000 Dossiers en attente de traitements) 
+mission ponctuelle 
+ 
+• 
+Rédiger des procédures, des tutoriels, des consignes 
+• 
+Participer à de mini-projets concernant la gestion du site 
+• 
+Prendre en charge les déclarations d’incidents ou d’anomalie de fonctionnement 
+bureautique quand les processus standard des porteurs de services ne suffisent 
+pas 
+ 
+Environnement technique :   Windows 10, office 365 
+Parcours professionnel 
+Page 3 de 6 
+ 
+ 
+ 
+ALBINGIA 
+De novembre 2021 à octobre 2022 
+ 
+Mission : 
+Coordinateur de Production - VIP 
+Actions / Tâches : 
+• 
+Gestion du planning technicien 
+• 
+Recrutement des nouveaux techniciens 
+• 
+Réorganisation et gestion des équipes de techniciens proximité et desk 
+• 
+Gestion et planification des interventions de proximité 
+• 
+Valideur des besoins matériel informatique 
+• 
+Gestion du parc et stock matériel (postes, imprimantes, consommables) 
+• 
+Interface entre le Directeur du Service Informatique et les techniciens 
+• 
+Reporting d’activité journalière vers le client 
+• 
+Administration itsm 
+• 
+Organisation et suivi d’un planning d’intervention mensuel dans les succursales en France 
+Environnement technique : Windows 10, office 365 
+JJA 
+De novembre 2020 à août 2021 
+Mission : 
+Coordinateur de Production - VIP 
+Actions / Tâches : 
+ 
+• 
+Gestion du planning technicien 
+• 
+Recrutement des nouveaux techniciens 
+• 
+Réorganisation et gestion des équipes de techniciens proximité et desk 
+• 
+Gestion et planification des interventions de proximité 
+• 
+Valider Les besoins matériel informatique 
+• 
+Responsable des achats matériel (recherche fournisseurs, commande vers les fournisseurs, négociation 
+de prix) 
+• 
+Gestion du parc et stock matériel (postes, imprimantes, consommables) 
+• 
+Interface entre le Directeur du Service et les équipes de techniciens 
+• 
+Reporting d’activité journalière vers le client 
+• 
+Mise en place d’un itsm (choix + administration) 
+Environnement technique : Windows 10, office 365 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 4 de 6 
+ 
+ 
+ 
+ 
+ 
+ 
+EDF RENOUVELABLE 
+De novembre 2019 à mars 2020 
+ 
+Mission : 
+Coordinateur de Production - Déploiement 
+Actions / Tâches : 
+Mission : Responsable projet migration w10 et mise a jour bios (800 postes) 
+ 
+•Gestion et planification de la migration et de la mise a jour du bios poste de tra 
+agence) 
+•gestion de 4 techniciens proximité (Siege et agence) 
+•reporting d’avancement migration et de la mise a jour du bios 
+•masterisation et livraison des postes de travail 
+•gestion du parc et du stock 
+ 
+Environnement technique :   Windows XP & 10 
+PORT AUTONOME DE PARIS 
+De septembre 2018 à août 2019 
+ 
+ 
+Mission : Technicien Support de Proximité - VIP 
+Actions / Tâches : 
+• 
+Assistance technique par téléphone 
+• 
+Assistance de proximités (Siège et agence REGION PARISIENNE) 
+•Masterisation des postes de travail 
+•Gestion des demandes et incidents informatiques (environnement VIP) 
+• 
+Diagnostique et maintenance des postes clients 
+•Gestion du parc et du stock (postes, imprimantes, consommables) 
+•Gestion et planification des déménagements 
+Environnement technique :   Windows XP & 10, active directory, MS Office 2010 & 
+VINCI CONSTRUCTION 
+De mars 2018 à juillet 2018 
+ 
+Mission : 
+Coordinateur de Production - VIP 
+Actions / Tâches : 
+Responsable service desk et proximité 
+ 
+ 
+•Gestion du planning technicien 
+•Intégration des nouveaux techniciens 
+•Réorganisation et gestion des équipes de techniciens proximité et desk 
+•Gestion et planification des interventions de proximité 
+•Gestion de stock matériel (postes, imprimantes, consommables) 
+•Interface entre le Directeur du Service et les équipes de techniciens 
+•Reporting d’activité journalière vers le client 
+•Valideur des commandes fournisseur 
+ 
+Environnement technique :WINDOWS 10, Office 365, ASSET MANAGER 
+Page 5 de 6 
+ 
+ 
+ 
+SUEZ 
+De novembre 2017 à janvier 2018 
+Mission : Technicien Support de Proximité - VIP 
+Actions / Tâches : 
+ 
+• 
+Réparation des postes de travail (environnement VIP) 
+• 
+Apporter conseil à l’utilisation bureautique et accompagnement sur les outils digitaux 
+• 
+Masterisation poste de travail 
+• 
+Assurer physiquement les remises et retours d’équipements 
+ 
+Environnement technique :   Windows XP & 10, active directory, MS Office 2003 & 2010 
+ 
+ 
+ 
+Cabinet GIDE LOYRETTE NOUEL 
+De septembre 2015 à octobre 2017 
+ 
+Mission : 
+Coordinateur de Production - VIP 
+Actions / Tâches : 
+ 
+Mission : Technicien de proximité/ Service Desk 
+ 
+• 
+Assistance technique par téléphone 
+• 
+Assistance nomadisme via kit nomade 
+• 
+Masterisation des postes de travail 
+• 
+Gestion des demandes et incidents informatiques (environnement VIP) 
+• 
+Diagnostique et maintenance des postes clients 
+• 
+Mise à jour du parc et du stock 
+ 
+• 
+Environnement Technique : Windows XP & 10, active directory, MS Office 2003 & 2010 
+ 
+ 
+Mission : coordinateur de production 
+ 
+• 
+Gestion du planning technicien 
+• 
+Intégration des nouveaux techniciens 
+• 
+Interface entre le client et l’équipe de techniciens 
+• 
+Gestion et planification des interventions de proximité 
+• 
+Gestion de stock matériel (postes, imprimantes, consommables) 
+• 
+Gestion et planification des déménagements 
+ 
+Environnement technique :   Windows XP & 10, active directory, MS Office 2003 & 2010 
+Page 6 de 6 
+ 
+ 
+SOPRA STERIA 
+De mai 2006- juin 2015 
+ 
+ 
+ 
+ 
+Mission : Coordinateur de Production - VIP 
+Actions / Tâches : 
+Mission : Technicien Service Desk 
+ 
+• 
+Assistance technique par téléphone (environnement VIP) 
+• 
+Assistance nomadisme via kit nomade 
+• 
+Gestion des incidents ou des demandes logiciels et matériels 
+Environnement Technique : Windows XP & 7, active directory, MS Office 2003 
+Mission : coordinateur de production 
+• 
+Gestion du planning technicien 
+• 
+Alerte des absences des techniciens vers le manager 
+• 
+Intégration des nouveaux techniciens 
+• 
+Interface entre le client et l’équipe de techniciens 
+• 
+Reporting d’activité journalière vers le client 
+ 
+Environnement technique : 
+Windows XP & 10, active directory, MS Office 2003 & 2010 
+TOTAL 
+D’avril 2001- mai 2006 
+Mission : Technicien Support - VIP 
+Actions / Tâches : 
+ 
+• 
+Assistance technique par téléphone 
+• 
+Assistance et conseil aux utilisateurs 
+• 
+Assurer le lien avec les différentes assistances et support pour garantir qu’une réponse soit apportée aux 
+utilisateurs 
+• 
+Gestion des incidents ou des demandes logiciels 
+ 
+Environnement technique :   Windows XP & 7, active directory, MS Office 2003 

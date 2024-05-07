@@ -1,0 +1,224 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Réponse technique 
+Marché CC AST DIGITAL 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+ 
+ Equipe de réponse : 
+Nom/Prénom  
+Trig.  
+Société  
+Poste  
+Contact  
+ 
+  
+NEURONES Global Account Manager  
+  
+HELPLINE 
+Ingénieur d’affaires  
+ 
+ 
+ 
+ 
+ Validité du document : 
+Version 
+Date 
+Auteur(s)/Correcteur(s) 
+Modifications 
+1.0 
+ 
+Groupement Neurones-Solutec 
+Version 1.0 
+ 
+ 
+ 
+3 
+Table des matières 
+1 
+Compréhension du besoin ............................................................................................................................4 
+1.1 Présentation 
+4 
+1.1.1 Eléments contextuels généraux 
+................................................................................................ 
+4 
+1.1.2 Contexte de la prestation ............................................................... Erreur ! Signet non défini. 
+1.2 La mission 
+4 
+1.2.1 Objectifs de la prestation .......................................................................................................... 
+4 
+1.2.2 Taches détaillées ...................................................................................................................... 
+4 
+1.2.3 Compétences requises et souhaitées 
+....................................................................................... 
+5 
+1.2.4 La date de démarrage et durée de la prestation 
+............................ Erreur ! Signet non défini. 
+1.2.5 Localisation : ............................................................................................................................. 
+5 
+2 
+Engagement de résultat 
+................................................................................................................................6 
+3 
+Démarche mise en œuvre 
+.............................................................................................................................7 
+3.1 Sélection du profil 
+7 
+3.2 Le suivi de la prestation 
+7 
+ 
+ 
+ 
+ 
+ 
+4 
+1 Compréhension du besoin 
+1.1 Présentation  
+1.1.1 Eléments contextuels généraux 
+SNCF Gares & Connexions est l’entreprise gestionnaire des 3000 gares Française.  
+Elle en assure le pilotage stratégique, la conception, la construction, l’aménagement, la maintenance, 
+la promotion, la valorisation, l’animation mais aussi la gestion opérationnelle des circulations et des 
+voyageurs / passants / chalands 
+En son sein, la Direction Digital & Technologie pilote le SI et les Service Digitaux mais assure aussi la 
+Gestion de Flottes de smartphones et l’assistance informatique pour les utilisateurs du siège, objet 
+de cette consultation. 
+1.2 La mission   
+1.2.1 Objectifs de la prestation  
+ 
+Intégré au sein de la Direction Digital & Technologie, la mission objet de cette consultation vise à 
+décharger les équipes SNCF dans trois domaines concernant les services bureautiques et digitaux au 
+sens large : 
+- La gestion courante des sollicitations et demandes ; 
+- L’assistance et le conseil aux utilisateurs ; 
+- La gestion des stocks, de l’approvisionnement à la mise au rebus en passant par la remise en main. 
+ 
+1.2.2 Taches détaillées  
+Technicien d’assistance et maintenance 
+Le Technicien d’Assistance et de Maintenance Informatique est en charge de : 
+-  Traiter les demandes des agents G&C reçues via le portail interne Digital Office ; 
+- Prendre en charge les déclarations d’incidents ou d’anomalie de fonctionnement bureautique 
+quand les processus standard des porteurs de services ne suffisent pas ; 
+- Alerter / escalader en interne DDT et/ou chez les fournisseurs ;  
+- Assurer le lien avec les différentes assistances et support pour garantir qu’une réponse soit apportée 
+aux utilisateurs ; 
+- Gérer le stock, les dotations et les retours d’équipements PC, tablettes, smartphones pour 
+l’ensemble du siège de G&C ; 
+- Assister le CSIE dans la gestion des commandes : déclenchement du réappro, suivi, relance ; 
+ 
+ 
+5 
+- Assurer le tri des matériels à évacuer (recyclage, collecte SNCF) ; 
+- Assurer physiquement les remises et retours d’équipements ; 
+- Assister les utilisateurs dans la prise en main et le paramétrage des équipements (en particulier 
+smartphone et tablette) ; 
+- Apporter conseil à l’utilisation bureautique et accompagnement sur les outils digitaux ; 
+- Prendre en charge des actions de communication et de pédagogie au nom de la DDT ; 
+- Rédiger des procédures, des tutoriels, des consignes ; 
+- Participer à de mini-projets concernant la gestion du site. 
+ 
+Résultats attendus et/ou livrables avec échéancier si besoin 
+Satisfaction client tenue au meilleur niveau. Corpus documentaire, outils et suivi régulièrement revus 
+et complétés.  
+Anticipation dans la gestion des stocks et autres fournitures. Alertes et escalades à bon escient. 
+1.2.3 Compétences requises et souhaitées 
+Profil de technicien support  
+Le titulaire sur cette mission dispose des connaissances suivantes 
+ 
+- 
+Pilotage des parcs bureautiques et/ou des flottes mobiles. 
+ 
+- 
+autonome dans le diagnostic remédiation de problème bureautique / mobile et même 
+de problème sur les infrastructures (réseau, VPN, habilitations, opérateurs, store, etc…). 
+ 
+- 
+Applications bureautique, Windows et Mac 
+- 
+Office 365 ++ 
+-            Active Directory / VPN 
+ 
+Ils devront d’autre part, faire preuve de capacité d’écoute et dialogue avec les clients, avec les 
+collègues avec sa hiérarchie, être en mesure de rendre compte par oral ou par écrit. 
+Ils devront être disponible, capable d’analyse et synthèse, savoir agir dans la complexité, être 
+autonome et avoir le sens de l’initiative. 
+1.2.4 Localisation :  
+ 
+16 avenue d’Ivry – 75 013 Paris, 
+ 
+ 
+6 
+2 Engagement de résultat  
+ 
+HELPLINE s'engage à affecter des profils correspondant aux niveaux de compétence et d'expertise requises 
+pour la réalisation des Prestations qui lui sont confiées.  
+Dans l'éventualité où une ressource se retrouverait indisponible, HELPLINE s'engage à proposer au Client des 
+profils d'intervenants équivalents et de même niveau ne remettant pas en cause le bon déroulé de la mission 
+et l'atteinte des résultats. 
+ 
+Dans le cadre de sa prestation, HELPLINE s’engage à réaliser les prestations suivantes :  
+ 
+Accompagner les clients  
+ 
+Répondre aux besoins techniques bureautique et mobilité.  
+ 
+Intervenir en tant que support auprès des utilisateurs. 
+ 
+Changement d’outils de production et d’applicatifs leur permettant d’exercer leur métier. 
+ 
+Création de process et suivi de ses techniciens dans le cadre de l’animation de son équipe. 
+ 
+Le prestataire présentera également son organisation pour s’assurer de la formation et du maintien 
+en compétence de son personnel, remplaçants compris. 
+ 
+ 
+7 
+3 Démarche mise en œuvre 
+ 
+3.1 Sélection du profil 
+Au travers de son processus de sélection fort à l’embauche, HELPLINE vous garantit la mise à disposition de 
+collaborateurs en adéquation avec les exigences de la SNCF.  
+Parmi les collaborateurs sélectionnés, HELPLINE détermine lesquels sont dotés des compétences principales 
+énoncées dans le cahier des charges. HELPLINE évalue ensuite les candidats qui répondent aux exigences 
+principales ou qui les dépassent, afin de déterminer le(s) candidat(s) susceptible(s) d’être proposé(s) à la 
+SNCF.  
+Le dossier de compétences de chaque collaborateur proposé pour intégrer le service en charge du besoin sera 
+étudié par la SNCF pour valider l’adéquation de son profil avec leurs attentes.  
+HELPLINE organisera en collaboration avec la SNCF une réunion durant laquelle le collaborateur pressenti 
+expliquera ce qu’il a compris du poste à pourvoir, répondra à un éventuel test technique et exposera les 
+expériences significatives au cours desquelles il a pu développer les compétences principales requises pour la 
+fonction. Cette démarche de sélection des collaborateurs implique donc une double validation de la part de 
+HELPLINE et de la SNCF qui permet de garantir le respect des exigences de la SNCF.  
+3.2  Le suivi de la prestation  
+Les interlocuteurs HELPLINE en charge du suivi de la prestation sont :   
+- LE MANAGER OPERATIONEL : Il assure le suivi de la prestation avec l’appui de l’ingénieur d’Affaires (IA) en 
+charge du dossier.  
+Il est le représentant du client et a pour objectifs d’évaluer les conditions de réalisation de la prestation, 
+d’anticiper les évolutions et points de blocage éventuel et de les gérer de manière proactive. Il assure 
+notamment le suivi de la continuité de service par la gestion des événements associés à la prestation (congés 
+et absences des intervenants, gestion des remplacements, remontée d’informations des intervenants, 
+réclamation client, extension ou modification du périmètre d’intervention…)  
+Le pôle IN pourra aussi s’appuyer sur le Manager opérationnel en cas de besoin de renfort supplémentaire ou 
+de remplacement d’une des ressources. Ce dernier, en tant que manager de l’ensemble des compétences 
+affectera un des collaborateurs de la base arrière HELPLINE, disposant des compétences nécessaires, afin de 
+répondre à la demande.  
+- Ingénieur d’affaires (IA)  
+Il est responsable des moyens nécessaires à la réalisation et à la réussite du projet et de l’évaluation financière 
+des services proposés. Il est en relation directe avec le responsable du marché au service Achats.  

@@ -1,0 +1,238 @@
+#!/usr/bin/env groovy
+
+// Version templatefile python : 2.0.5
+
+// Déclaration de la shared library build_libs
+@Library('build_libs') _
+
+// Options du build. Plusieurs sont définies via la méthode defaultBuildOptions.
+// Consulter le README du template pour plus d'informations
+Map options = [
+    // Nombre de builds à conserver dans l'historique des builds du job Jenkins
+    NUM_TO_KEEP: 10,
+    // La branche par défaut à partir de laquelle la publication Artifactory et l'analyse SonarQube doivent être faits
+    BRANCH_DEVELOP: 'feat/refactor_eul',
+    // Version de Python
+    PYTHON_VERSION: '3.9',
+    // Indique si une image Docker applicative est à produire par le pipeline pour le projet
+    DOCKER_BUILD: true,
+    // Permet d'activer des logs plus détaillés lors du build Docker
+    IMAGE_BUILD_VERBOSE: false,
+]
+
+// Valorisation des options par défaut
+options = defaultBuildOptions(options)
+
+// Propriétés du job
+properties([
+    // Connexion GitLab
+    gitLabConnection("${options['GITLAB_NAME']}"),
+    // Conservation des N dernières exécutions
+    buildDiscarder(logRotator(numToKeepStr: "${options['NUM_TO_KEEP']}")),
+    // Déclenchement du job via webhook lors de push de nouveau code ou de création de merge request
+    pipelineTriggers([[$class: 'GitLabPushTrigger', triggerOnPush: true, triggerOnMergeRequest: true, branchFilterType: 'All']])
+])
+
+// L'analyse qualité et la publication des artefacts sont lancées uniquement sur la branche de développement
+Boolean qualityAnalysisEnabled = env.BRANCH_NAME == options['BRANCH_DEVELOP']
+Boolean publishEnabled = env.BRANCH_NAME == options['BRANCH_DEVELOP']
+Boolean dockerEnabled = env.BRANCH_NAME == options['BRANCH_DEVELOP'] && options['DOCKER_BUILD'] == true
+
+// Sinon l'horodatage des logs eul-cli, s'il est activé, est décalé d'une heure
+env.TZ = 'Europe/Paris'
+
+// Horodatage des lignes de log Jenkins
+timestamps {
+    // Prise en charge des codes ANSI pour affichage de logs Jenkins colorisés
+    ansiColor('xterm') {
+        withTools([
+            [name: 'python', version: "${options['PYTHON_VERSION']}"],
+            [name: 'sonar-scanner', version: 'latest', registry: 'eul'],
+            dockerEnabled ? [name: 'buildkit', image: 'moby/buildkit', version: 'v0.10.3-rootless'] : [:],
+        ]) {
+            try {
+                stage('Checkout') {
+                    println '🔰 Récupération du code source'
+                    scmInfo = checkout scm
+                    env.GIT_URL = scmInfo.GIT_URL
+                    env.GIT_SHORT_URL = "${env.GIT_URL}".replace('https://', '')
+                    env.GIT_COMMIT = scmInfo.GIT_COMMIT
+                    env.LIMIT_HOSTS = sh(script: 'git show -s --pretty=%an', returnStdout: true).trim()
+                    skipPipeline = sh(script: "git log -1 | grep '\\[ci-skip\\]'", returnStatus: true)
+                    println '✔️ Récupération du code source effectuée'
+                }
+                if (skipPipeline == 0) {
+                    skipReason = sh(script: 'git log -1 --pretty=oneline', returnStdout: true)
+                    println "📜 Build ignoré. Le dernier commit contient [ci-skip] : ${skipReason}"
+                    currentBuild.displayName = 'Build skipped because of [ci-skip] tag'
+                    // Arrêt du pipeline de build
+                    currentBuild.result = 'SUCCESS'
+                    return
+                }
+                stage('Setup') {
+                    container('python') {
+                        println '🔰 Configuration du build'
+                        // Extraction de la version
+                        env.VERSION = sh(returnStdout: true, script: 'eul python setup.py --version').trim()
+                        env.PIP_PACKAGE_NAME = sh(returnStdout: true, script: 'eul python setup.py --name').trim()
+                        currentBuild.displayName = env.VERSION
+                        println '✔️️ Configuration du build effectuée'
+                    }
+                }
+                stage('Install') {
+                    container('python') {
+                        gitlabCommitStatus('install') {
+                            println '🔰 Installation des modules'
+                            sh 'eul pip install --upgrade pip'
+                            sh 'eul pip install -r requirements.txt --upgrade --no-cache-dir .[ci]'
+                            println '✔️️ Installation des modules effectuée'
+                        }
+                    }
+                }
+                stage('Tests') {
+                    container('python') {
+                        gitlabCommitStatus('tests') {
+                            println '🔰 Exécution des tests unitaires'
+                            if (sh(script: 'pytest -m \'not database_access\' ', returnStatus: true)) {
+                                unstable '⚠️️ Les tests unitaires ont échoué'
+                            }
+                            println '✔️️ Exécution des tests unitaires effectuée'
+                        }
+                    }
+                }
+                stage('QA') {
+                    when(qualityAnalysisEnabled) {
+                        println '🔰 Analyse qualité'
+                        gitlabCommitStatus('formatage') {
+                            container('python') {
+                                if (sh(script: 'black --check --diff .', returnStatus: true)) {
+                                    error '❌ Black a identifié un formatage de code incorrect'
+                                }
+                                println '✔️️ Vérification avec le formateur de code Black effectué'
+                            }
+                        }
+                        gitlabCommitStatus('sonarqube') {
+                            container('python') {
+                                sh "pylint src > pylint-report.txt || pylint-exit \$?"
+                                println '✔️️ Analyse statique avec pylint effectuée'
+                            }
+                            container('sonar-scanner') {
+                                withSonarQubeEnv('sonarqube') {
+                                    // Le nom de la branche est ajouté à la fin du nom du projet SonarQube
+                                    String sonarBranch = env.BRANCH_NAME?.replaceAll(/[\\]/, '_').replaceAll(/[, ]/, '')
+                                    String sonarProjectName = "${options['PROJECT_NAME']} ${sonarBranch}".trim()
+                                    // Extrait la version au format attendu par SonarQube (<major.<minor>) à partir de options['PYTHON_VERSION']
+                                    String sonarPythonVersion = options['PYTHON_VERSION'].replaceAll(/(\d+\.\d+).*/, '$1')
+                                    sh """\
+                                        eul sonar-scanner \
+                                        -Dsonar.projectKey=${options['PROJECT_SONAR_KEY_BRANCH']} \
+                                        -Dsonar.projectName=\"${sonarProjectName}\" \
+                                        -Dsonar.projectVersion=${env.VERSION} \
+                                        -Dsonar.python.version=\"${sonarPythonVersion}\" \
+                                        -Dsonar.links.ci=${JOB_URL} \
+                                        -Dsonar.links.homepage=${GIT_URL} \
+                                    """
+                                }
+                                println '✔️️ Analyse qualité effectuée'
+                            }
+                        }
+                    }
+                }
+                stage('Local CVE scan') {
+                    container('python') {
+                        println '🔰 Scan de sécurité local sur les artefacts produits'
+                        gitlabCommitStatus('local cve scan') {
+                            // Scan CVE déclenché avant la publication des artefacts pour ne pas publier d'artefact avec des vulnerabilités
+                            if (sh(script: 'eul artefacts cve-scan --local --critical --pip', returnStatus: true)) {
+                                // La présence de cve dans les artefacts est bloquante
+                                unstable "⚠️️ Le scan de CVE a identifié des vulnérabilités critiques dans l'artefact ou ses dépendances"
+                            }
+                        }
+                        println '✔️️ Scan CVE local effectué'
+                    }
+                }
+                stage('Publish') {
+                    when(publishEnabled) {
+                        container('python') {
+                            println "🔰 Publication des artefacts du projet dans Artifactory depuis la branche ${BRANCH_NAME}"
+                            gitlabCommitStatus('publication') {
+                                // Packaging. S'il n'y a pas de module .whl à produire, remplacer par : sh "eul python setup.py sdist --dist-dir ${env.VERSION}"
+                                sh "eul python setup.py sdist --dist-dir ${env.VERSION} bdist_wheel --dist-dir ${env.VERSION}"
+                                // Publication Python sur Artifactory
+                                sh "eul artefacts upload -T pypi ${env.VERSION}/ ${options['PROJECT_NAME']}/"
+                            }
+                            // Publication des infos de build dans artifactory
+                            sh 'eul artefacts build-publish'
+                            // Publication Jenkins du lien sur le build Artifactory
+                            publishArtifactoryBuildLink()
+                            println '✔️ Publication des artefacts effectuée'
+                        }
+                    }
+                }
+                stage('CVE scan') {
+                    when(publishEnabled) {
+                        container('python') {
+                            println '🔰 Scan CVE distant sur les artefacts produits sur Artifactory'
+                            // Pour des raisons de performances, l'éxecution du scan de build est asynchrone. C'est à dire, le résultat final du scan n'est pas attendu par le pipeline.
+                            // Le lien artifactory vers le scan de build est publié directement dans le job et accessible.
+                            // Pour forcer le pipeline à attendre le résultat du scan de build, il faut rajouter le flag `--wait-for-result` à la commande de scan cve comme suit:
+                            // <eul artefacts cve-scan --wait-for-result>
+                            // cf: https://docs.apps.eul.sncf.fr/share/securise-scan-dependances
+                            if (sh(script: 'eul artefacts cve-scan', returnStatus: true)) {
+                                // Si le pipeline arrive à ce stage cela veut dire qu'il a passé le scan local et ne présente pas de CVE critiques mais hautes.
+                                // Pour mettre la pipeline en erreur, remplacer unstable "⚠️..." par error "❌..." dans la ligne suivante
+                                unstable "⚠️️ Le scan de CVE a identifié des vulnérabilités hautes dans l'artefact ou ses dépendances"
+                            }
+                            println '✔️ Scan CVE distant effectué'
+                        }
+                    }
+                }
+                stage('Docker build') {
+                    when(dockerEnabled) {
+                        container('buildkit') {
+                            println '🔰 build Docker avec Buildkit'
+                            String dockerVerboseOption = options['IMAGE_BUILD_VERBOSE'] ? '--debug' : ''
+                            env.IMAGE_NAME = options['PROJECT_NAME']
+                            env.IMAGE_VERSION = env.VERSION
+
+                            result = sh(script: """
+                                eul image $dockerVerboseOption build docker --tag=$IMAGE_NAME:$IMAGE_VERSION \
+                                --build-arg 'VERSION=$IMAGE_VERSION' --build-arg 'IMAGE_NAME=$IMAGE_NAME'  \
+                                --build-arg EUL_REPO_USER='${EUL_REPO_USER}' --build-arg EUL_REPO_PASSWORD='${EUL_REPO_PASSWORD}'  \
+                                --build-arg EUL_ARESIS='${EUL_ARESIS}' --build-arg PIP_PACKAGE_NAME='${PIP_PACKAGE_NAME}'
+                                """, returnStatus: true)
+                                
+                            if (result != 0) {
+                                error '❌ Le build Docker avec BuildKit a échoué'
+                            }
+                            println '✔️ build Docker effectué'
+                        }
+                    }
+                }
+                // Voir https://jenkins.io/doc/pipeline/steps/gitlab-plugin/ pour plus de précisions
+                updateGitlabCommitStatus name: 'build', state: 'success'
+                println '👍 Build du job de snapshot terminé avec succès'
+                currentBuild.result = 'SUCCESS'
+            } catch (all) {
+                currentBuild.result = 'FAILURE'
+                // Envoi d'un mail en cas d'échec
+                // Voir https://jenkins.io/doc/pipeline/steps/email-ext/ pour plus de précisions
+                emailext(
+                    body: '$DEFAULT_CONTENT',
+                    subject: '$DEFAULT_SUBJECT',
+                    // Envoi du mail aux développeurs responsables d'une modification du code
+                    recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
+                    // Pour également envoyer le mail à une liste d'adresses (séparées par des ,) :
+                    //to: "adressmail1, adressmail2"
+                )
+                throw all
+            }
+            finally {
+                // Collecte et remontée dans Jenkins des problèmes rencontrés pendant le build
+                addNgIssuesReportToJob('tools': ['cveScan', 'python', 'taskScanner'])
+                // Pour le suivi et les indicateurs eUL
+                eulNotify()
+            }
+        }
+    }
+}

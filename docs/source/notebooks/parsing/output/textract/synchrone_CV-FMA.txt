@@ -1,0 +1,578 @@
+synchrone
+
+
+TECHNICIEN SUPPORT SENIOR
+
+
+FMA
+
+
+Compétences technologiques
+
+
+Mobile :
+
+
+IOS, ANDROID, MOBILE IRON, INTUNE
+
+
+Logiciels :
+
+
+Office 365, suite Adobe, pack office2013/2016, Shiva, B'pod,IT4os ,inventaire A2itools
+
+
+os :
+
+
+Windows 10/11, Android, Mac, Serveur 2003,2012,2016 ,2019
+
+
+Ticketing :
+
+
+GLPI, JIRA, ITSM, SMARTI, SERVICENOW, ITZMI
+
+
+Réseaux et supervision :
+
+
+TCP/IP,DNS, DHCP ,Gestion Active directory, FIREWALL, WIFI,VPN, Proxy ,Lan/Wan, Nagios,
+
+
+Zabix, Adminstudio, routeur Orange, borne wifi, switch
+
+
+Sécurité :
+
+
+Checkpoint, Stormshield, Fortiproxi, Parefeu ,Intégration, Bitlocker
+
+
+Logiciels :
+
+
+VMWARE, VNC, Virtualbox, Exchange , SCCM, Outlook : Installation et configuration
+
+
+Prise en main à distance :
+
+
+TeamsViewer Escort ,Ivanti Landesk, VNC, Dameware
+
+
+Gestion et préparation de matériel :
+
+
+Ordinateur portable/fixe, imprimante, téléphone fixe/ mobile
+
+
+Office 365 :
+
+
+Teams, One Drive, OneNote, Sharpoint Outlook
+
+
+synchrone.fr
+
+
+Synchrone . 115 rue Réaumur - 75002 Paris
+
+synchrone
+
+
+Expériences professionnelles
+
+
+Consultant Technicien Support Informatique
+
+
+Janvier 2023 - à nos jours
+
+
+SNCF
+
+
+Contexte : Intervention pour les utilisateurs du CNO, en charge de l'exploitation ferroviaire en 24/7.
+
+
+Activités :
+
+
+Gestion des sollicitations utilisateurs (utilisation ITSM (ARS), gestion et suivi des dossiers
+
+
+affectés)
+
+
+Traitement des incidents (Prise en charge des dossiers, résolution d'incidents
+
+
+(environnement bureautique) sur site, traitement des garanties avec le constructeur
+
+
+Traitement des demandes de service (installation de postes informatiques, installation
+
+
+des logiciels autorisés, masterisation et préparation de postes informatiques,
+
+
+déménagement de postes informatiques, récupération de postes informatiques et
+
+
+accessoires)
+
+
+Gestion du parc (suivi du parc, mise en conformité, gestion de stock de matériel, suivi des
+
+
+garanties)
+
+
+Migration Windows 10 (transformation postes Windows 7 vers Windows 10,
+
+
+personnalisation de l'environnement l'utilisateur, accompagnement au changement)
+
+
+Gestion des salles de crises du CNO
+
+
+Consultant Technicien Support Informatique
+
+
+Mars 2022 - Décembre 2022
+
+
+RATP
+
+
+Activités :
+
+
+Assurer le support technique Niveau 2
+
+
+Résolution des incidents réseaux, matériels, logiciels
+
+
+Installation, paramétrage et configuration du matériel informatique (PC, tablette,
+
+
+imprimante...)
+
+
+Installation des applications spécifiques aux clients
+
+
+Installation/paramétrage/imprimantes
+
+
+Brassage réseaux
+
+
+Accompagnement des utilisateurs au niveau informatique
+
+
+Formation auprès des utilisateurs sur les bonnes pratiques d'utilisation du matériel
+
+
+Gestion administrative des inventions/gestion des tickets via Smarti,ITSM, Service Now
+
+
+Suivi de la dotation de matériel
+
+
+Prise en main à distance pour la résolution des incidents
+
+
+Résolution des différents problèmes liés au VPN
+
+
+Mise en service et configuration des postes
+
+
+synchrone.fr
+
+
+Synchrone 115 rue Réaumur - 75002 Paris
+
+synchrone
+
+
+Déploiement des postes informatiques systèmes d'exploitation Windows 7 vers Windows
+
+
+10, mise à jour des logiciels
+
+
+Sauvegarde et transfère des données
+
+
+Déblocage de comptes Windows
+
+
+Mises à jour, sécurité, gestion des mots de passe du réseau et en local, déploiement
+
+
+postes, intégration aux domaines.
+
+
+Tablettes, Smartphone Android, IPhone : Mises à jour, sécurité, enrôlement.
+
+
+Consultant Technicien Support Informatique
+
+
+Février 2020 - Mars 2022
+
+
+Caisse des Dépôts & Consignations
+
+
+Activités :
+
+
+Assurer le support technique Niveau 2, niveau 3 junior
+
+
+Résolution des incidents réseaux, matériels, logiciels
+
+
+Installation, paramétrage et configuration du matériel informatique (PC, tablette,
+
+
+imprimante...)
+
+
+Installation des applications spécifiques aux clients
+
+
+Installation/paramétrage/imprimantes
+
+
+Brassage réseaux
+
+
+Accompagnement des utilisateurs au niveau informatique
+
+
+Formation auprès des utilisateurs sur les bonnes pratiques d'utilisation du matériel
+
+
+Gestion administrative des inventions/gestion des tickets via Smarti,ITSM, Service Now
+
+
+Suivi de la dotation de matériel
+
+
+Prise en main à distance pour la résolution des incidents
+
+
+Résolution des différents problèmes liés au VPN
+
+
+Mise en service et configuration des postes
+
+
+Déploiement des postes informatiques systèmes d'exploitation Windows 7 vers Windows
+
+
+10, mise à jour des logiciels
+
+
+Sauvegarde et transfère des données
+
+
+Déblocage de comptes Windows
+
+
+Mises à jour, sécurité, gestion des mots de passe du réseau et en local, déploiement
+
+
+postes, intégration aux domaines.
+
+
+Tablettes, Smartphone Android, IPhone : Mises à jour, sécurité, enrôlement.
+
+
+Résolution incident : Vidéoprojecteur
+
+
+Gestion de toutes les demandes et incidents concernant les systèmes d'information
+
+
+orientés poste de travail : prise d'appels, qualification, résolution, installation, préparation,
+
+
+suivi des demandes et incidents de niveau 1 et 2.
+
+
+Gérer le support des outils de mobilités : configurer et paramétrer smartphones et
+
+
+tablettes.
+
+
+Assurer la gestion du parc et des équipements informatiques et bureautiques.
+
+
+Assurer la traçabilité de vos actions dans un outil de ticketing.
+
+
+Installation et configuration VMWARE
+
+
+synchrone.fr
+
+
+Synchrone 115 rue Réaumur - 75002 Paris
+
+synchrone
+
+
+Conseiller les utilisateurs sur les bonnes pratiques.
+
+
+Support HELP DESK de niveau 1 et 2
+
+
+Diagnostic et traitement des incidents jusqu'à leurs résolutions
+
+
+Technicien Proximité N1/N2
+
+
+Janvier 2019 - Janvier 2020
+
+
+Samsung
+
+
+Contexte du projet :
+
+
+Résolution des incidents et assistance aux utilisateurs.
+
+
+Activités :
+
+
+Traitement des demandes et résolutions d'incidents N1/N2
+
+
+Prise en main à distance via Escort
+
+
+Assistance aux utilisateurs
+
+
+Masterisation de poste via SCCM
+
+
+Gestion de l'AD
+
+
+Mise à jour de procédure
+
+
+Sécurité des logiciels via Nasca
+
+
+Sauvegarde des données
+
+
+Brassage informatique
+
+
+Routeur Orange
+
+
+Environnement technologique :
+
+
+GLPI, Escort, Nasca, Windows10
+
+
+Technicien de proximité
+
+
+Février 2018 - Janvier 2019
+
+
+AXA Banque
+
+
+Contexte du projet :
+
+
+Migration des postes Windows 7 vers Windows 10
+
+
+Activités :
+
+
+Migration de Windows 7 vers Windows10
+
+
+Traitement des demandes et résolutions d'incidents N1/N2
+
+
+Assistance aux utilisateurs
+
+
+Masterisation des postes via SCCM
+
+
+Interconnexion des ordinateurs, imprimantes et serveurs
+
+
+Gestion l'AD
+
+
+Sauvegarde des données
+
+
+Brassage informatique
+
+
+synchrone.fr
+
+
+Synchrone 115 rue Réaumur - 75002 Paris
+
+synchrone
+
+
+Environnement technologique :
+
+
+GLPI, Windows 10
+
+
+Technicien de proximité
+
+
+Janvier 2017 - Décembre 2017
+
+
+Crédit Agricole
+
+
+Contexte du projet :
+
+
+Migration des postes Windows 7 vers Windows 10.
+
+
+Activités :
+
+
+Migration de Windows7 à Windows10
+
+
+Traitement des demandes et résolutions d'incidents N1/N2
+
+
+Assistance aux utilisateurs
+
+
+Masterisation des postes via SCCM
+
+
+Interconnexion des ordinateurs, imprimantes et serveurs
+
+
+Gestion l'AD
+
+
+Sauvegarde des données
+
+
+Brassage informatique
+
+
+Environnement technologique :
+
+
+JIRA, Windows 10
+
+
+Technicien de Proximité
+
+
+Janvier 2014 - Janvier 2016
+
+
+ICC
+
+
+Contexte du projet :
+
+
+Résolution des incidents et assistance aux utilisateurs.
+
+
+Activités :
+
+
+Traitement des demandes par mail, par téléphone
+
+
+Résolutions d'incidents N1/N2
+
+
+Assistance aux utilisateurs
+
+
+Mise à jour site web
+
+
+Installation et configuration des logiciels
+
+
+Environnement technologique :
+
+
+Pack office 2013, windows 10
+
+
+synchrone.fr
+
+
+Synchrone . 115 rue Réaumur - 75002 Paris
+
+synchrone
+
+
+Formations & certifications
+
+
+2018
+
+
+Formation Devops
+
+
+2017
+
+
+Administration infrastructures réseaux
+
+
+2010
+
+
+Master 2 réseaux et systèmes informatiques - Dakar Sénégal
+
+
+Compétences linguistiques
+
+
+Anglais : Technique
+
+
+synchrone.fr
+
+
+Synchrone . 115 rue Réaumur - 75002 Paris

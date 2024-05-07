@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.202.3/containers/python-3
+{
+	"name": "DAG NAO Container",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "h2-startup",
+	"remoteUser": "root",
+	"runServices": [
+		"h2-startup"
+	],
+	"shutdownAction": "stopCompose",
+	"workspaceFolder": "/workspace",
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash"
+					}
+				},
+				"python.linting.enabled": true,
+				"editor.formatOnSave": true,
+				"python.pythonPath": "/usr/local/bin/python",
+				"python.languageServer": "Pylance",
+				"python.formatting.provider": "black",
+				"python.linting.flake8Enabled": false,
+				"python.linting.pylintEnabled": true,
+				"python.linting.mypyEnabled": false,
+				"python.analysis.typeCheckingMode": "basic",
+				"python.analysis.useLibraryCodeForTypes": true,
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-azuretools.vscode-cosmosdb",
+				"esbenp.prettier-vscode",
+				"mhutchie.git-graph",
+				"octref.vetur",
+				"eamodio.gitlens",
+				"ms-azuretools.vscode-azurefunctions"
+			]
+		}
+	},
+	"postCreateCommand": " .devcontainer/post_create_script.sh"
+}

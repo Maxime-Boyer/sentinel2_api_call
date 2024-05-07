@@ -1,0 +1,10 @@
+version: "3.11"
+services:
+  dev_env:
+    build: ./h2_startup
+    env_file:
+      - ./.env
+
+    tty: true
+    volumes:
+      - ..:/workspace

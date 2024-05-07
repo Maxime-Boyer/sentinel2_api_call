@@ -1,0 +1,14 @@
+amazon-textract-caller==0.2.3
+amazon-textract-textractor==1.7.9
+boto3
+langchain-community
+ipykernel==6.29.4
+pdf2image==1.17.0
+ipython==8.23.0
+langchain==0.1.7
+pymupdf
+openpyxl
+PyMuPDF
+rapidfuzz
+langchain_aws
+pandas
