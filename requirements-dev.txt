@@ -1,3 +1,7 @@
+aenum==3.1.15
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 astroid==3.1.0
     # via pylint
 backports-tarfile==1.1.1
@@ -11,6 +15,7 @@ build==1.2.1
 certifi==2024.2.2
     # via
     #   -r /workspace/requirements.txt
+    #   pyproj
     #   requests
 cffi==1.16.0
     # via cryptography
@@ -27,6 +32,7 @@ click==8.1.7
     #   geomet
     #   pip-tools
     #   pydoc-markdown
+    #   sentinelhub
     #   sentinelsat
 colorama==0.4.6
     # via zest-releaser
@@ -46,6 +52,10 @@ databind-json==4.5.1
     # via
     #   docspec
     #   pydoc-markdown
+dataclasses-json==0.6.5
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 deprecated==1.2.14
     # via
     #   databind
@@ -118,6 +128,10 @@ markdown-it-py==3.0.0
     # via rich
 markupsafe==2.1.5
     # via jinja2
+marshmallow==3.21.2
+    # via
+    #   -r /workspace/requirements.txt
+    #   dataclasses-json
 mccabe==0.7.0
     # via
     #   flake8
@@ -129,7 +143,10 @@ more-itertools==10.2.0
     #   jaraco-classes
     #   jaraco-functools
 mypy-extensions==1.0.0
-    # via black
+    # via
+    #   -r /workspace/requirements.txt
+    #   black
+    #   typing-inspect
 nh3==0.2.17
     # via readme-renderer
 nodeenv==1.8.0
@@ -142,13 +159,30 @@ nr-util==0.8.12
     # via
     #   docspec-python
     #   pydoc-markdown
+numpy==1.26.4
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
+    #   shapely
+    #   tifffile
+oauthlib==3.2.2
+    # via
+    #   -r /workspace/requirements.txt
+    #   requests-oauthlib
+    #   sentinelhub
 packaging==24.0
     # via
+    #   -r /workspace/requirements.txt
     #   black
     #   build
+    #   marshmallow
     #   pytest
 pathspec==0.12.1
     # via black
+pillow==10.3.0
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 pip-tools==7.4.1
     # via -r /workspace/requirements-dev.in
 pkginfo==1.10.0
@@ -179,6 +213,10 @@ pylint==3.1.0
     # via -r /workspace/requirements-dev.in
 pylint-exit==1.2.0
     # via -r /workspace/requirements-dev.in
+pyproj==3.6.1
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 pyproject-hooks==1.1.0
     # via
     #   build
@@ -195,6 +233,10 @@ pytest-env==1.1.3
     # via -r /workspace/requirements-dev.in
 pytest-pythonpath==0.7.3
     # via -r /workspace/requirements-dev.in
+python-dateutil==2.9.0.post0
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 pyyaml==6.0.1
     # via
     #   pre-commit
@@ -206,12 +248,18 @@ requests==2.31.0
     #   -r /workspace/requirements.txt
     #   pydoc-markdown
     #   requests-mock
+    #   requests-oauthlib
     #   requests-toolbelt
+    #   sentinelhub
     #   sentinelsat
     #   twine
     #   zest-releaser
 requests-mock==1.12.1
     # via -r /workspace/requirements-dev.in
+requests-oauthlib==2.0.0
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
@@ -220,21 +268,40 @@ rich==13.7.1
     # via twine
 secretstorage==3.3.3
     # via keyring
+sentinelhub==3.10.2
+    # via -r /workspace/requirements.txt
 sentinelsat==1.2.1
     # via -r /workspace/requirements.txt
+shapely==2.0.4
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 six==1.16.0
-    # via zest-releaser
+    # via
+    #   -r /workspace/requirements.txt
+    #   python-dateutil
+    #   zest-releaser
+tifffile==2024.5.3
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 tomli==2.0.1
     # via
+    #   -r /workspace/requirements.txt
     #   pydoc-markdown
+    #   sentinelhub
     #   yapf
 tomli-w==1.0.0
-    # via pydoc-markdown
-tomlkit==0.12.4
+    # via
+    #   -r /workspace/requirements.txt
+    #   pydoc-markdown
+    #   sentinelhub
+tomlkit==0.12.5
     # via pylint
 tqdm==4.66.4
     # via
     #   -r /workspace/requirements.txt
+    #   sentinelhub
     #   sentinelsat
 twine==5.0.0
     # via zest-releaser
@@ -242,14 +309,25 @@ typeapi==2.2.1
     # via databind
 typing-extensions==4.11.0
     # via
+    #   -r /workspace/requirements.txt
     #   databind
     #   nr-util
+    #   sentinelhub
     #   typeapi
+    #   typing-inspect
+typing-inspect==0.9.0
+    # via
+    #   -r /workspace/requirements.txt
+    #   dataclasses-json
 urllib3==2.2.1
     # via
     #   -r /workspace/requirements.txt
     #   requests
     #   twine
+utm==0.7.0
+    # via
+    #   -r /workspace/requirements.txt
+    #   sentinelhub
 virtualenv==20.26.1
     # via pre-commit
 watchdog==4.0.0

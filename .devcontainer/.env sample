@@ -1,0 +1,19 @@
+APP_RUN_SCHEDULE_MINUTES=5
+
+# General
+APP_NUM_WORKER=2
+APP_MAX_CNX=500
+
+MODULE_PATH=/workspace
+DEVCONTAINER_NAME=h2-startup
+
+# logs
+LOG_APP_NAME=h2-startup
+LOG_LEVEL=INFO
+LOG_FORMAT=txt
+
+# SentinelHub API Access Token
+SH_CLIENT_ID=xxx
+SH_CLIENT_SECRET=xxx
+
+DIR_DATA_PATH="/workspace/data"

@@ -18,24 +18,12 @@ The main goal is to retrieve images from Sentinel-2 Level 2A using the [Sentinel
 
 That's all! Have a good day.
 
-**Problem with the connection**
-For now, I'm having a problem connecting to apihub.copernicus.eu through the api. I have registered and called the api using the correct username and password.
-
-With the vpn turned on, I get the error :
-
-<!-- language: none -->
-
-    requests.exceptions.ConnectionError: HTTPSConnectionPool(host='apihub.copernicus.eu', port=443): Max retries exceeded with url: /apihub/search?format=json&rows=100&start=0&q=beginPosition%3A%5B%222022-01-20T00%3A00%3A00Z%22+TO+%222022-03-20T00%3A00%3A00Z%22%5D+cloudcoverpercentage%3A%5B%220%22+TO+%2230%22%5D+platformname%3A%22Sentinel-2%22+footprint%3A%22Intersects%28POINT%2834.665+31.625%29%29%22 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xffffb2923fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-
-With the vpn turned off, I get the error :
-
-<!-- language: none -->
-
-    requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
-**Run**
+**Solution Run Command**
 You can run the script using the command line :
 
 ```console
-python3 /workspace/src/h2_startup/sentinel_api_call.py --location_lon 31.625 --location_lat 34.665 --start_date "2022-01-20" --end_date "2022-01-25"
+python3 /workspace/src/h2_startup/sentinel_api_call_sentinelhub.py --location_lon 31.625 --location_lat 34.665 --start_date "2022-01-20" --end_date "2022-01-25"
 ```
+
+**Details**
+It only requires longitude and latitude coordinates. The next step would be to request the min_lon, min_lat, max_lon and max_lat coordinates bbox.

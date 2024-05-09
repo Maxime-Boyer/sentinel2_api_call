@@ -1,11 +1,18 @@
+aenum==3.1.15
+    # via sentinelhub
 certifi==2024.2.2
-    # via requests
+    # via
+    #   pyproj
+    #   requests
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via
     #   geomet
+    #   sentinelhub
     #   sentinelsat
+dataclasses-json==0.6.5
+    # via sentinelhub
 geojson==3.1.0
     # via sentinelsat
 geomet==1.1.0
@@ -14,11 +21,59 @@ html2text==2024.2.26
     # via sentinelsat
 idna==3.7
     # via requests
+marshmallow==3.21.2
+    # via dataclasses-json
+mypy-extensions==1.0.0
+    # via typing-inspect
+numpy==1.26.4
+    # via
+    #   sentinelhub
+    #   shapely
+    #   tifffile
+oauthlib==3.2.2
+    # via
+    #   requests-oauthlib
+    #   sentinelhub
+packaging==24.0
+    # via marshmallow
+pillow==10.3.0
+    # via sentinelhub
+pyproj==3.6.1
+    # via sentinelhub
+python-dateutil==2.9.0.post0
+    # via sentinelhub
 requests==2.31.0
-    # via sentinelsat
+    # via
+    #   requests-oauthlib
+    #   sentinelhub
+    #   sentinelsat
+requests-oauthlib==2.0.0
+    # via sentinelhub
+sentinelhub==3.10.2
+    # via -r /workspace/requirements.in
 sentinelsat==1.2.1
     # via -r /workspace/requirements.in
+shapely==2.0.4
+    # via sentinelhub
+six==1.16.0
+    # via python-dateutil
+tifffile==2024.5.3
+    # via sentinelhub
+tomli==2.0.1
+    # via sentinelhub
+tomli-w==1.0.0
+    # via sentinelhub
 tqdm==4.66.4
-    # via sentinelsat
+    # via
+    #   sentinelhub
+    #   sentinelsat
+typing-extensions==4.11.0
+    # via
+    #   sentinelhub
+    #   typing-inspect
+typing-inspect==0.9.0
+    # via dataclasses-json
 urllib3==2.2.1
     # via requests
+utm==0.7.0
+    # via sentinelhub
