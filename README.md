@@ -19,6 +19,7 @@ The main goal is to retrieve images from Sentinel-2 Level 2A using the [Sentinel
 That's all! Have a good day.
 
 **Solution Run Command**
+
 You can run the script using the command line :
 
 ```console
@@ -26,4 +27,5 @@ python3 /workspace/src/h2_startup/sentinel_api_call_sentinelhub.py --location_lo
 ```
 
 **Details**
+
 It only requires longitude and latitude coordinates. The next step would be to request the min_lon, min_lat, max_lon and max_lat coordinates bbox.
